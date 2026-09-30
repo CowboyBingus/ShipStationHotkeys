@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.8
+
+- Translatable: the section name and the Control Center and Stratagem Hero binding names follow the game's Text Language when a translation is installed (see TRANSLATING.md).
+- With Mod Bindings Menu v2.1 these names follow a language change the next time a binding page opens.
+- Measured in live play: 0.021 ms per frame in missions and 0.077 ms on the ship while the game window is focused, the same as v1.7.
+
 ## 1.7
 
 - Rename Galactic Menu Hotkey to Ship Station Hotkeys. The manager GUID, addon resource, binding IDs and log file name are unchanged, so managers treat it as an update and saved keys are kept.

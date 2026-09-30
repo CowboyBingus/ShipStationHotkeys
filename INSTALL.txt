@@ -1,4 +1,4 @@
-Ship Station Hotkeys v1.7 (formerly Galactic Menu Hotkey)
+Ship Station Hotkeys v1.8 (formerly Galactic Menu Hotkey)
 Supports Helldivers 2 Steam build 25480438 / EXE 1.8.46015.0.
 
 Install Bingus Shared Loader v17 or newer. Import this ZIP into Arsenal or
@@ -18,12 +18,15 @@ opens the briefing and seats you in your Hellpod behind it. Pressed while the
 pod is still opening, it waits up to ten seconds and then enters.
 F2-F4 are left to the game's performance monitor.
 
-Install Mod Bindings Menu v2.0 separately to rebind all six shortcuts on the
+Install Mod Bindings Menu v2.0 or newer separately to rebind all six shortcuts on the
 MODS tab of Options > Mouse & Keyboard or Controller, choose their activation
 type, or assign controller buttons.
 
-Vanilla Plus Megapack v29 bundles this version as an option. Enable either
+Vanilla Plus Megapack v36 bundles this version as an option. Enable either
 that option or this standalone addon, not both.
+
+Its section and binding names follow the game's Text Language when a
+translation is installed; see TRANSLATING.md in the repository.
 
 https://github.com/CowboyBingus/BingusSharedLoader/releases/latest
 https://github.com/CowboyBingus/ModBindingsMenu/releases/latest

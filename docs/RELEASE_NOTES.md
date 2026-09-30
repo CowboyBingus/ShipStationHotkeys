@@ -1,4 +1,3 @@
-- Rename Galactic Menu Hotkey to Ship Station Hotkeys; the manager GUID, addon resource, binding IDs and log name are unchanged, so it updates in place and keeps saved keys.
-- Add ship station shortcuts: F1 Armory, F5 Control Center, F6 Ship Management, F7 Stratagem Hero beside its cabinet, and F8 instant Hellpod entry after mission selection in solo sessions.
-- Group all six shortcuts under SHIP STATION HOTKEYS on the Mod Bindings Menu v2.0 MODS tab, with any activation type and controller buttons.
-- Live tests confirmed Tab, F1, F5, F6 and F8 entry and exit; F7 distance guard awaits a live check.
+- Translatable: the section name and the Control Center and Stratagem Hero binding names follow the game's Text Language when a translation is installed (see TRANSLATING.md).
+- With Mod Bindings Menu v2.1 these names follow a language change the next time a binding page opens.
+- Measured in live play: 0.021 ms per frame in missions and 0.077 ms on the ship while the game window is focused, the same as v1.7.

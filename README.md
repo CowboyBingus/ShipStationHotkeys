@@ -1,4 +1,4 @@
-# Ship Station Hotkeys v1.7
+# Ship Station Hotkeys v1.8
 
 *Formerly Galactic Menu Hotkey.* Use these shortcuts aboard the Super Destroyer while no other menu is open:
 
@@ -17,11 +17,13 @@ F8 opens the briefing and skips its 2-second intro wait so the briefing appears 
 
 Requires [Bingus Shared Loader v17 or newer / API 1](https://github.com/CowboyBingus/BingusSharedLoader/releases/latest). Install [Mod Bindings Menu v2.0](https://github.com/CowboyBingus/ModBindingsMenu/releases/latest) separately to rebind all six shortcuts on the **MODS** tab of the Mouse & Keyboard and Controller binding pages, under **SHIP STATION HOTKEYS**. Mod Bindings Menu v2.0 also lets you choose Press, Hold, Double Tap and the other activation types, and assign controller buttons. Without it, the listed keys remain fixed fallbacks.
 
+Translatable: the section name and the CONTROL CENTER and STRATAGEM HERO bindings follow the game's Text Language when a translation is installed (with Mod Bindings Menu v2.1 or newer they also follow a language change; the other four bindings use the game's own translated names). [How to translate](TRANSLATING.md).
+
 ## Install
 
-Import `Ship-Station-Hotkeys-v1.7.zip` into Arsenal or HD2MM, enable this addon and Bingus Shared Loader, then deploy. Enable Mod Bindings Menu v2.0 for saved and controller shortcuts. Keep Bingus Shared Loader as the winning startup replacement. Restart Helldivers 2 after replacing an older version.
+Import `Ship-Station-Hotkeys-v1.8.zip` into Arsenal or HD2MM, enable this addon and Bingus Shared Loader, then deploy. Enable Mod Bindings Menu v2.0 for saved and controller shortcuts. Keep Bingus Shared Loader as the winning startup replacement. Restart Helldivers 2 after replacing an older version.
 
-Upgrading from Galactic Menu Hotkey: this is the same addon under a new name. Your mod manager treats it as an update, and your saved shortcut keys are kept. Remove the withdrawn Galactic Menu Hotkey v1.3 and v1.4 packages if they are still installed. Vanilla Plus Megapack v29 bundles this version as its Ship Station Hotkeys option; do not enable both the standalone addon and that option.
+Upgrading from Galactic Menu Hotkey: this is the same addon under a new name. Your mod manager treats it as an update, and your saved shortcut keys are kept. Remove the withdrawn Galactic Menu Hotkey v1.3 and v1.4 packages if they are still installed. Vanilla Plus Megapack bundles this version as its Ship Station Hotkeys option; do not enable both the standalone addon and that option.
 
 ## Compatibility and test status
 
