@@ -1,5 +1,25 @@
 # Changelog
 
+## 1.9
+
+- With Bingus Shared Loader v19 the shortcuts register with Mod Bindings Menu once every mod has started, before the first frame; with older loaders, on the first frame as before.
+- A shortcut whose Mod Bindings Menu registration failed is tried again up to 8 times over about four minutes, sooner when Mod Bindings Menu reports a new revision. Until then it keeps its fixed key; before, it kept the fixed key for the whole session.
+- With a Mod Bindings Menu release that offers `poll`, the six shortcuts are read in one call per frame while the game is focused aboard the ship: 8 reads of game memory instead of 18.
+- If that `poll` call fails, the failure is logged once and the shortcuts are read one by one, as with older releases.
+- The mod looks for the ship and checks the game window's focus every 15 frames and right before a shortcut acts, instead of every frame. Shortcuts are still read every frame and act on the frame they are pressed.
+- The mod allocates no memory of its own per frame: the ship lookup reuses its world list, and the focus check its buffer.
+- Every Windows function is declared under a private name, so another mod that declared the same function first with a different prototype can no longer break the shortcuts.
+- With a game language other than English, an incomplete shared translation table left by another mod no longer makes all six Mod Bindings Menu registrations fail.
+- A translation pack forces its language on every mod only when it sets `force = true`.
+- On a game build it does not support, the update stops for the session when the ship is first found (status `stopped: unsupported game build`), with one stop line in the log.
+- The update runs through Bingus Shared Runtime's update guard, like the family's other mods, and its status, first failure included, survives the game's shutdown.
+- After 8 errors less than 3600 error-free frames (about a minute) apart, the update stops for the session instead of failing every frame; each burst of errors is logged once.
+- When the update of a mod below this one fails, the shortcuts pause and resume after 60 frames without such an error; 8 such errors in a burst stop them.
+- A key held through a pause must be pressed again, and a waiting F8 is cancelled.
+- The update passes every argument and return value through to the update it wraps, not just the frame time.
+- The game's module files are hashed once per session for every mod together, through Bingus Shared Runtime, instead of once more by this mod.
+- Measured in live play: 0.006 ms per frame in missions and 0.023 on the ship, where the cost depends on the focused station.
+
 ## 1.8
 
 - Translatable: the section name and the Control Center and Stratagem Hero binding names follow the game's Text Language when a translation is installed (see TRANSLATING.md).

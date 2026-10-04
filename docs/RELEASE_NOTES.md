@@ -1,3 +1,7 @@
-- Translatable: the section name and the Control Center and Stratagem Hero binding names follow the game's Text Language when a translation is installed (see TRANSLATING.md).
-- With Mod Bindings Menu v2.1 these names follow a language change the next time a binding page opens.
-- Measured in live play: 0.021 ms per frame in missions and 0.077 ms on the ship while the game window is focused, the same as v1.7.
+- With Mod Bindings Menu v2.2 the six shortcuts are read in one call per frame, with fewer memory reads.
+- The ship and the window focus are checked a few times a second instead of every frame; shortcuts still act on the frame they are pressed.
+- A failed Mod Bindings Menu registration is tried again for about four minutes instead of keeping the fixed key for the session.
+- Another mod's Windows declarations or an incomplete translation table can no longer break the shortcuts or their bindings.
+- On an unsupported game build the shortcuts stop for the session with one line in the log.
+- When the game or another mod raises an error, the shortcuts pause and resume after 60 clean frames; 8 errors in one burst stop them.
+- Measured in live play: 0.006 ms per frame in missions and 0.023 on the ship, where the cost depends on the focused station.
