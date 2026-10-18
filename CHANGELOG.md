@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.9.1
+
+- With Mod Bindings Menu, an idle frame aboard the ship makes one read of game memory: Mod Bindings Menu is asked only while one of the six shortcuts is down, and the ship and window focus are read only on a new press.
+- Once the ship has been found, a two-read mission check every 60 frames replaces the ship search every 15 frames, aboard and in missions; the log notes when a mission starts and ends.
+- Measured in game: 0.014 ms per frame on the ship instead of 0.032-0.035.
+
 ## 1.9
 
 - With Bingus Shared Loader v19 the shortcuts register with Mod Bindings Menu once every mod has started, before the first frame; with older loaders, on the first frame as before.

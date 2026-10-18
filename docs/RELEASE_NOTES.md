@@ -1,7 +1,3 @@
-- With Mod Bindings Menu v2.2 the six shortcuts are read in one call per frame, with fewer memory reads.
-- The ship and the window focus are checked a few times a second instead of every frame; shortcuts still act on the frame they are pressed.
-- A failed Mod Bindings Menu registration is tried again for about four minutes instead of keeping the fixed key for the session.
-- Another mod's Windows declarations or an incomplete translation table can no longer break the shortcuts or their bindings.
-- On an unsupported game build the shortcuts stop for the session with one line in the log.
-- When the game or another mod raises an error, the shortcuts pause and resume after 60 clean frames; 8 errors in one burst stop them.
-- Measured in live play: 0.006 ms per frame in missions and 0.023 on the ship, where the cost depends on the focused station.
+- With Mod Bindings Menu, an idle frame aboard the ship makes one read of game memory: Mod Bindings Menu is asked only while one of the six shortcuts is down, and the ship and window focus are read only on a new press.
+- Once the ship has been found, a two-read mission check every 60 frames replaces the ship search every 15 frames, aboard and in missions; the log notes when a mission starts and ends.
+- Measured in game: 0.014 ms per frame on the ship instead of 0.032-0.035.
